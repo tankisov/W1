@@ -19,14 +19,14 @@ namespace Task1
             //-------------------------------------------------
             int[] arr1 = new int[n];
             int b = 0;
-            for (int i=0;i<n;i++)
+            for (int i=0;i<n;i++) // 
             {
-                int cnt = 0;
+                int cnt = 0; // создаю каунтер 
                 if (arr[i] > 1)
                 {
-                    for(int j = 2; j < arr[i]; i++)
+                    for(int j = 2; j < arr[i]; i++) // пробегаюсь по массиву и делю числа на 2
                     {
-                        if(arr[i] % j != 0)
+                        if(arr[i] % j != 0) // также создаю условия
                         {
                             continue;
                         }
@@ -41,17 +41,12 @@ namespace Task1
                     }
                 }
             }
-            Console.WriteLine(b);
+            Console.WriteLine(b); 
+            // пробегаюсь по массиву чтобы вывести количество простых чисел
             for(int i =0; i < b; i++)
             {
                 Console.WriteLine(arr1[i]);
-
-            }
-            
-
-
-                
-        }
-        
+            }     
+        }        
     }
 }
