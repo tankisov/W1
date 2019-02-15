@@ -45,7 +45,7 @@ namespace Task_2
             static void Main(string[] args)
             {
                 //Создаю переменную а типа Студент
-                Student a = new Student("Almaz", "18BD110155");
+                Student a = new Student("Tahir", "18BD110155");
                 a.year = 1;
                 a.Print();
                 Console.ReadKey();
